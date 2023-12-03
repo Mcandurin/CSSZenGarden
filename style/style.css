@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800;6..96,900&family=Ephesis&family=Inria+Serif:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: all 0.7s;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+h3 {
+  font: 700 3rem "Bodoni Moda", serif;
+  color: #734500;
+}
+
+p {
+  font: 1.5rem "Inria Serif", serif;
+}
+
+[role=banner] {
+  background-image: url("https://assets.codepen.io/9008264/Frame+1+%282%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 55.063rem;
+}
+[role=banner] h2 {
+  font: 7.5rem "Ephesis", sans-serif;
+  color: #734500;
+  padding-left: 4rem;
+}
+
+.summary {
+  background-color: #734500;
+}
+.summary a:hover {
+  color: #B57F2D;
+  text-decoration: none;
+}
+.summary p {
+  display: flex;
+  flex-direction: column;
+  font: 3rem "Inria Serif", serif;
+  color: white;
+  text-align: center;
+  margin-top: 0rem;
+  padding: 3rem;
+}
+.summary a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.preamble {
+  background-image: url("https://assets.codepen.io/9008264/Frame+2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57.8rem;
+  padding: 4rem;
+}
+.preamble h3 {
+  font: 700 5rem "Bodoni Moda", serif;
+  color: #734500;
+}
+.preamble p {
+  padding-right: 50rem;
+  padding-top: 3rem;
+  margin-right: 15rem;
+  color: #B57F2D;
+}
+
+.intro h1 {
+  font-family: "Ephesis", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 6rem;
+}
+
+.explanation {
+  background-color: #CE9D53;
+  background-image: url("https://assets.codepen.io/9008264/Frame+2+%281%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57.8rem;
+  padding: 4rem;
+  text-align: right;
+}
+.explanation h3 {
+  font: 700 5rem "Bodoni Moda", serif;
+  color: white;
+}
+.explanation p {
+  padding-left: 80rem;
+  margin-left: 10rem;
+  padding-top: 3rem;
+  color: white;
+}
+
+.participation {
+  background-color: #734500;
+  background-image: url("https://assets.codepen.io/9008264/Frame+2+%282%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 71rem;
+  padding: 4rem;
+}
+.participation h3 {
+  font: 700 5rem "Bodoni Moda", serif;
+  color: white;
+}
+.participation p {
+  padding-right: 50rem;
+  margin-right: 30rem;
+  padding-top: 3rem;
+  color: white;
+}
+.participation a {
+  color: white;
+}
+
+.benefits {
+  padding: 3rem;
+}
+.benefits h3 {
+  font: 700 4rem "Bodoni Moda", serif;
+  color: #734500;
+}
+.benefits p {
+  font: 1.5rem "Inria Serif", serif;
+  padding-right: 50rem;
+  padding-top: 3rem;
+  color: #B57F2D;
+  padding-top: 3rem;
+}
+
+.requirements {
+  width: 100%;
+  padding-bottom: 10rem;
+}
+.requirements h3 {
+  font: 700 4rem "Bodoni Moda", serif;
+  color: #734500;
+  padding-left: 3rem;
+}
+.requirements p {
+  font: 1.5rem "Inria Serif", serif;
+  color: #B57F2D;
+  padding: 3rem;
+  line-height: 1.6rem;
+}
+.requirements a {
+  color: #B57F2D;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat (6, 1fr);
+  grid-template-rows: repeat (3, 3fr);
+  column-gap: 9rem;
+  row-gap: 1rem;
+  padding: 3rem 20rem;
+}
+footer a {
+  font-size: 0rem;
+  margin: 1rem;
+}
+
+.zen-validate-html {
+  background-image: url("https://assets.codepen.io/9008264/%F0%9F%A6%86+icon+_checkmark+circle+outline_.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  color: #734500;
+}
+
+.zen-validate-css {
+  background-image: url("https://assets.codepen.io/9008264/%F0%9F%A6%86+icon+_eye_.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  color: #734500;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.zen-license {
+  background-image: url("https://assets.codepen.io/9008264/closed-captioning-regular+1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  padding: 4.2rem;
+  margin-left: 10%;
+  font: 0.1rem;
+  color: #734500;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.zen-accessibility {
+  background-image: url("https://assets.codepen.io/9008264/accessible-icon+1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 11rem;
+  font: 0.1rem;
+  color: #734500;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.zen-github {
+  background-image: url("https://assets.codepen.io/9008264/%F0%9F%A6%86+icon+_github_.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.wrapper {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  font: 700 4rem "Bodoni Moda", serif;
+  color: #734500;
+  text-align: center;
+}
+
+.design-name {
+  font: 500 2rem "Bodoni Moda", serif;
+  color: #734500;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  transition: all 1s;
+}
+
+.designer-name {
+  font: 500 1.5rem "Inria Serif", serif;
+  color: #B57F2D;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.design-archives {
+  padding: 3rem;
+}
+.design-archives .next {
+  text-align: left;
+}
+.design-archives a {
+  color: #B57F2D;
+  font-size: 2rem;
+}
+.design-archives a:hover {
+  color: #734500;
+}
+.design-archives .viewall {
+  text-align: left;
+}
+
+.zen-resources {
+  background-color: #734500;
+  width: 110%;
+  padding-left: 3rem;
+  height: 55rem;
+}
+.zen-resources .resources {
+  color: white;
+  padding: 4rem;
+}
+.zen-resources li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 2rem;
+}
+.zen-resources a {
+  color: white;
+  font: 500 1.5rem "Inria Serif", serif;
+}
+.zen-resources a:hover {
+  color: #B57F2D;
+}
+
+.extra1 {
+  background-image: url("https://assets.codepen.io/9008264/depositphotos_615297306-stock-photo-delicate-beige-peony-flower-aesthetic+1+%281%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 20rem;
+  position: absolute;
+  margin: 5%;
+  top: 10%;
+  left: 75%;
+}
+
+.extra2 {
+  background-image: url("https://assets.codepen.io/9008264/pexels-yulia-polyakova-11418377+1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 15rem;
+  position: absolute;
+  margin: 3%;
+  top: 20%;
+  left: 85%;
+}
+
+.extra3 {
+  background-image: url("https://assets.codepen.io/9008264/photo-1627451972011-fff589ccffc4+1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 15rem;
+  position: absolute;
+  margin: 5%;
+  top: 5%;
+  left: 70%;
+}
+
+.extra4 {
+  background-image: url("https://assets.codepen.io/9008264/Layer_1+%283%29.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 5rem;
+  position: absolute;
+  top: 2%;
+  left: 45%;
+}
+
+@media only screen and (min-width: 768px) {
+  [role=banner] h2 {
+    font-size: 6.4rem;
+    padding-top: 2rem;
+  }
+
+  .preamble {
+    background-image: url("https://assets.codepen.io/9008264/Frame+2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 52rem;
+    padding: 4rem;
+  }
+  .preamble p {
+    padding-right: 30rem;
+    padding-top: 1rem;
+    color: #B57F2D;
+  }
+
+  .explanation p {
+    padding-left: 30rem;
+    padding-top: 3rem;
+    color: white;
+  }
+
+  .participation {
+    background-color: #734500;
+    background-image: url("https://assets.codepen.io/9008264/Frame+2+%282%29.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 68rem;
+    padding: 2rem;
+  }
+  .participation p {
+    padding-right: 0rem;
+    padding-top: 0rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat 6, 1fr;
+    grid-template-rows: repeat 3, 3fr;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    padding: 2rem 10rem;
+  }
+
+  .extra4 {
+    left: 70rem;
+    left: 48%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  [role=banner] {
+    background-image: url("https://assets.codepen.io/9008264/Frame+1+%282%29.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100rem;
+  }
+	h2{
+		font-size:2rem;
+	}
+	h3 {
+  font: 700 2rem "Bodoni Moda", serif;
+  color: #734500;
+}
+
+p {
+  font: 1rem "Inria Serif", serif;
+}
+
+  .extra1 {
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    margin: 5%;
+    top: 65%;
+    left: 20%;
+  }
+
+  .extra2 {
+    width: 10rem;
+    height: 15rem;
+    position: absolute;
+    margin: 5%;
+    top: 55%;
+    left: 30%;
+  }
+
+  .extra3 {
+    width: 10rem;
+    height: 15rem;
+    position: absolute;
+    margin: 5%;
+    top: 80%;
+    left: 10%;
+  }
+
+  .preamble {
+    height: 80rem;
+    padding-left: 2rem;
+  }
+  .preamble p {
+    width: 100%;
+    font-size: 1.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    color: #B57F2D;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat 6, 1fr;
+    grid-template-rows: repeat 3, 3fr;
+    column-gap: 0.5rem;
+    row-gap: 0.3rem;
+    margin-left: 0rem;
+  }
+  footer a {
+    font-size: 0rem;
+    margin: 1rem;
+  }
+
+  .zen-validate-html {
+    background-image: url("https://assets.codepen.io/9008264/%F0%9F%A6%86+icon+_checkmark+circle+outline_.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 7rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    color: #734500;
+  }
+
+  .zen-validate-css {
+    background-image: url("https://assets.codepen.io/9008264/%F0%9F%A6%86+icon+_eye_.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 7rem;
+    color: #734500;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .zen-license {
+    background-image: url("https://assets.codepen.io/9008264/closed-captioning-regular+1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 4.5em;
+    padding: 3.5rem;
+    font: 0.1rem;
+    color: #734500;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .zen-accessibility {
+    background-image: url("https://assets.codepen.io/9008264/accessible-icon+1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 7rem;
+    font: 0.1rem;
+    color: #734500;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .zen-github {
+    background-image: url("https://assets.codepen.io/9008264/%F0%9F%A6%86+icon+_github_.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 7rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 9rem;
+  }
+}
+.explanation {
+  padding: 1rem;
+  height: 70rem;
+  width: 100%;
+  text-align: left;
+}
+.explanation p {
+  padding-left: 0rem;
+  padding-top: 0rem;
+  color: white;
+  text-align: left;
+}
+
+.participation {
+  width: 100%;
+  height: 71rem;
+  padding: 4rem;
+}
+.participation h3 {
+  font: 700 5rem "Bodoni Moda", serif;
+  color: white;
+}
+.participation p {
+  padding-right: 0rem;
+  margin-right: 0rem;
+  padding-top: 1rem;
+  color: white;
+}
+.participation .zen-resources {
+  background-color: #734500;
+  width: 150rem;
+  height: 70rem;
+}
